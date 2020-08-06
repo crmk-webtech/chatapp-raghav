@@ -96,3 +96,32 @@ color:blue;
 .chat:hover{
 background-color:rgb(218, 234, 245);
 }
+
+#settings{
+    position: absolute;
+    left: 33.5vw;
+    background-color: white;
+    /* margin-top: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.setting-options{
+    padding: 10px;
+    background-color: rgb(48, 84, 150);
+    opacity: 0.5;
+    color: whitesmoke;
+    font-size: large;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.setting-options:hover{
+    background-color: rgb(48, 84, 150);
+    opacity: 0.7;
+    padding: 12px;
+}
+
+a{
+    margin: 0;
+}
