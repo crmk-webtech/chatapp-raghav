@@ -19,8 +19,110 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
  
 </head>
-<body>
+<body id="body">
     <div class="container-fluid">
+        <div class="row sidebar" id="sidebar" >
+            <div class="col-12 top-sidebar">
+            <div  ><i class="fa fa-user-circle" id="usericon" style="font-size:4rem;"></i></div>
+            <div><h5 id="username">Charu Sachdeva</h5></div>
+            <div id="userno">87656-89076</div>
+            </div>
+            <div class="col-12 options">
+                <ul>
+                <li class="option"><a href="#"><i class="fa fa-users icons"></i><span> New Group</span></a></li>
+                <li class="option" id="preview-contacts"><a href="#"><i class="fa fa-user icons"></i><span> Contacts</span></a></li>
+                <li class="option"><a href="#"><i class="fa fa-phone icons"></i><span> Calls</span></a></li>
+                <li class="option"><a href="#" ><i class="fa fa-bookmark icons"></i><span> Saved messages</span></a></li>
+                <li class="option" id="preview-settings"><a href="#" ><i class="fa fa-cog icons"></i><span> Settings</span></a></li>
+                <li class="option" id="preview-invite"><a href="#"><i class="fa fa-user-plus icons"></i><span> Invite</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 outer " id="contacts">
+            <h1 style="position:sticky;top:0;background-color: rgb(48, 84, 150);opacity: 0.8;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backcontact()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-user"></i>&nbspContacts</h1>
+            <div id="contact-scroll">
+            <div style="border-bottom: 1px groove; " class="col-12" >
+                        
+                <div class="row" style="margin-bottom: 15px;">
+                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                    <div class="col-sm-6">
+                        <h2>Raghav</h2>
+                        <p class="user">Kaim palty</p>
+                    </div>
+                </div>
+            </div>    
+            <div style="border-bottom: 1px groove; " class="col-12" >
+                        
+                <div class="row" style="margin-bottom: 15px;">
+                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                    <div class="col-sm-6">
+                        <h2>Mridul</h2>
+                        <p class="user">Tereko pta nhi h pr tu h</p>
+                    </div>
+                </div>
+            </div> 
+            <div style="border-bottom: 1px groove; " class="col-12" >
+                        
+                <div class="row" style="margin-bottom: 15px;">
+                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                    <div class="col-sm-6">
+                        <h2>Kartik</h2>
+                        <p class="user">Hadippaaa...</p>
+                    </div>
+                </div>
+            </div> 
+            <div style="border-bottom: 1px groove; " class="col-12" >
+                        
+                <div class="row" style="margin-bottom: 15px;">
+                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                    <div class="col-sm-6">
+                        <h2>Priya</h2>
+                        <p class="user">Hey I am using chatapp</p>
+                    </div>
+                </div>
+            </div> 
+            <div style="border-bottom: 1px groove; " class="col-12" >
+                        
+                <div class="row" style="margin-bottom: 15px;">
+                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                    <div class="col-sm-6">
+                        <h2>Miraj</h2>
+                        <p class="user">Mja aa rha h</p>
+                    </div>
+                </div>
+            </div> 
+            <div style="border-bottom: 1px groove; " class="col-12" >
+                        
+                <div class="row" style="margin-bottom: 15px;">
+                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                    <div class="col-sm-6">
+                        <h2>Rahul</h2>
+                        <p class="user">Kya bolti public</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        </div>
+        <div class="col-12 col-md-6 outer " id="invitefriends">
+            <h1 style="background-color: rgb(48, 84, 150);opacity: 0.8;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backinvite()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-user-plus"></i>&nbspInvite Friends</h1>
+            <div id="invite-content" >Enjoyed using our app!!<br>Share this link with your friends and enjoy chatting</div>
+            <div id="invite-link"><i class="fa fa-share-alt" aria-hidden="true"></i><input type="text" value="https://chatapp.com/server/142711047382368256" disabled><i class="fa fa-clone" aria-hidden="true"></i></div>
+            <img src="emoji.jpg" alt="emoji">
+        </div>
+        <div class="col-12 col-md-6 outer " id="settings">
+            <h1 style="background-color: rgb(48, 84, 150);opacity: 0.8;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="back(this)"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-cogs" aria-hidden="true"></i>&nbspSettings</h1>
+            <div style="text-align: right;font-size: 20px;padding: 10px;position: absolute;right: 5px;"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
+            <div style="width:100%;margin-top:4vh;text-align: center;"><i class="fa fa-user-circle" style="font-size:5vw;"></i><br>Charu</div>
+            <div id="settings-container" style="margin-top: 3vh;">
+                <a href="#"><div class="setting-options"><i class="fa fa-bell" aria-hidden="true"></i>&nbspNotifications</div></a>
+                <a href="#"><div class="setting-options"><i class="fa fa-user-secret" aria-hidden="true"></i>&nbspPrivacy</div></a>
+                <a href="#"><div class="setting-options"><i class="fa fa-shield" aria-hidden="true"></i>&nbspSecurity</div></a>
+                <a href="#"><div class="setting-options"><i class="fa fa-adjust" aria-hidden="true"></i>&nbspTheme</div></a>
+                <a href="#"><div class="setting-options"><i class="fa fa-picture-o" aria-hidden="true"></i>&nbspWallpaper</div></a>
+                <a href="#"><div class="setting-options"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbspContact Us</div></a>
+                <div style="text-align: center;margin-top: 8vh;"><h4>-By crmk-webtech</h4></div>
+            </div>
+        </div>
         <div class="row">
             
         </div>
@@ -30,60 +132,76 @@
                     <div class="row">
                         <div class="col-md-4  " id="inner">
                             <div class="header">
-                            <i class="fa fa-bars"></i>
+                            <i class="fa fa-bars" id="bars"></i>
                             &nbsp;Chat app</div>
                         </div>
                     </div>
-                    <div class="row "><div class="col-12 search"><input type="text" class="main" placeholder="&#61442;  Search.." size="35" id="searchbar"></div></div>
+                    <div class="row "><div class="col-12 search" style="width: 33%;"><input type="text" class="main" placeholder="&#61442;  Search.." size="35" id="searchbar"></div></div>
                     <div style="overflow-y: scroll;overflow-x:hidden;height:71vh; width:100%; margin-top:22vh;">
                     <div  class="row">
                        
                         <div   class="col-12">
                             
                     
-                            <div style="border-bottom: 1px groove; " id="raghav" class="chat" class="col-12" >
+                            <!-- <div style="border-bottom: 1px groove; " id="chat2" class="col-12"  class="chat">
                                 
                                 <div class="row">
                                     <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
                                     <div class="col-sm-6">
                                         <h4>Raghav</h4>
                                 <p><span class="user">You:</span>ok</p>
+                                <div style="display:none" id="raghav"></div>
                                     </div>
-                                    <div class="col-sm-2" style="margin-top: 10px;">
+                                    <div class="col-sm-2">
                                         <p>24/7/2020</p>
-                                        <img src="download.png" height="35" width="25">
+                                        <img src="download.png" height="40" width="30">
                                     </div>
                                 </div>
                                 
                             
+                            </div> -->
+                            <div style="border-bottom: 1px groove; " id="chat2" class="chat" class="col-12">
+                                <div class="row" >
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                                    <div class="col-sm-6">
+                                        <h4>Raghav</h4>
+                                <p>bye</p>
+                                <div style="display:none" id="raghav"></div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <p>2/8/2020</p>
+                                        
+                                    </div>
                             </div>
-                       
-                            <div style="border-bottom: 1px groove; " id="kartik" class="chat" class="col-12">
+                            </div>
+                            <div style="border-bottom: 1px groove; " id="chat1" class="chat" class="col-12">
                                 <div class="row" >
                                     <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
                                     <div class="col-sm-6">
                                         <h4>Kartik</h4>
-                                <p>hii</p>
+                                <p>bye</p>
+                                <div style="display:none" id="kartik"></div>
                                     </div>
-                                    <div class="col-sm-2" style="margin-top: 10px;">
+                                    <div class="col-sm-2">
                                         <p>2/8/2020</p>
                                         
                                     </div>
                             </div>
                             </div>
                         
-                            <div style="border-bottom: 1px groove; " id="mridul" class="chat" class="col-12">
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12">
                                 <div class="row" >
                                     <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
                                     <div class="col-sm-6">
                                         <h4>Mridul</h4>
-                                        <p>hii</p>
+                                        
+                                <p>hii</p>
                                     </div>
-                                    <div class="col-sm-2" style="margin-top: 10px;">
+                                    <div class="col-sm-2">
                                         <p>2/8/2020</p>
                                         
                                     </div>
-                                </div>
+                            </div>
                             </div>
                         
                             <div style="border-bottom: 1px groove; " class="chat"  class="col-12">
@@ -91,44 +209,60 @@
                                     <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
                                     <div class="col-sm-6">
                                         <h4>Priya</h4>
-                                        <p>hii</p>
+                                        
+                                <p>hii</p>
                                     </div>
-                                    <div class="col-sm-2" style="margin-top: 10px;">
+                                    <div class="col-sm-2">
                                         <p>2/8/2020</p>
                                         
                                     </div>
-                                </div>
+                            </div>
                             </div>
                        
                             <div style="border-bottom: 1px groove; " class="chat" class="col-12">
-                                <div class="row">
+                                <div class="row" >
                                     <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
                                     <div class="col-sm-6">
                                         <h4>Rahul</h4>
-                                <p><span class="user">You:</span>ok</p>
+                                        
+                                <p>hii</p>
                                     </div>
-                                    <div class="col-sm-2" style="margin-top: 10px;">
-                                        <p>24/7/2020</p>
-                                        <img src="download.png" height="35" width="25">
+                                    <div class="col-sm-2">
+                                        <p>2/8/2020</p>
+                                        
                                     </div>
-                                </div>
+                            </div>
                             </div>
                         
                             <div style="border-bottom: 1px groove; " class="chat" class="col-12">
                                 <div class="row" >
                                     <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
                                     <div class="col-sm-6">
-                                        <h4>Miraj</h4>
-                                        <p>hii</p>
+                                        <h4>Diya</h4>
+                                        
+                                <p>hii</p>
                                     </div>
-                                    <div class="col-sm-2" style="margin-top: 10px;">
+                                    <div class="col-sm-2">
                                         <p>2/8/2020</p>
                                         
                                     </div>
-                                </div>
+                            </div>
                             </div>
                         
-                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12">
+                                <div class="row" >
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                                    <div class="col-sm-6">
+                                        <h4>Anjali</h4>
+                                        
+                                <p>hii</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <p>2/8/2020</p>
+                                        
+                                    </div>
+                            </div>
+                            </div>
                         
                             <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
                         
@@ -171,32 +305,36 @@
                 </div>
             
             <div class="col-12 col-md-6 outer ">
-                <div class="row">
+                <div class="row" >
                     <div class="col-md-6  " id="inner">
-                        
+                        <span id="chat-user"> 
+
+                        </span>
+                        <span>
+                        <i class="fa fa-ellipsis-v" aria-hidden="true" id="ellipsis" onclick="chatMenu()"></i>
+                        <i class="fa fa-search" aria-hidden="true" id="inner-search"></i>
+                        </span>
                     </div>
+                </div>
+                <div class="chat-div">
+                    <ul>
+                        <li class="chat-menu"><a href="#">Photos</a></li>
+                        <li class="chat-menu"><a href="#">Videos</a></li>
+                        <li class="chat-menu"><a href="#">Files</a></li>
+                        <li class="chat-menu"><a href="#">Audio</a></li>
+                        <li class="chat-menu" onclick="clearchat()"><a href="#">Clear</a></li>
+                        <li class="chat-menu"><a href="#">Report</a></li>
+                        <li class="chat-menu"><a href="#">Block</a></li>
+                        <li class="chat-menu"><a href="#">Wallpaper</a></li>
+                    </ul>
                 </div>
                 <div style="margin:37% 33%;" id="div1"><b>Tap a contact to start chatting</b></div>
                 
-                <div class="row" id="div2"  style="position :fixed">
-                        <div class="col-sm-12" style="vertical-align: bottom;">
-                            <input type="text" id="input" style="width:44vw;">
-                            <button id="btn"style="width:4vw" >Send</button>
+                <div class="row" id="div2"  style="position :fixed;width: 100%;">
+                        <div class="col-sm-12">
+                            <span><input type="text" id="input" style="width:45%;"></span>
+                            <button id="btn" style="width: 3%;text-align: center;"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
                         </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 outer " id="settings">
-                <h1 style="background-color: rgb(48, 84, 150);opacity: 0.8;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-cogs" aria-hidden="true"></i>&nbspSettings</h1>
-                <div style="text-align: right;font-size: 20px;padding: 10px;position: absolute;right: 5px;"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
-                <div style="width:100%;margin-top:4vh;text-align: center;"><i class="fa fa-user-circle" style="font-size:5vw;"></i><br>Charu</div>
-                <div id="settings-container" style="margin-top: 3vh;">
-                    <a href="#"><div class="setting-options"><i class="fa fa-bell" aria-hidden="true"></i>&nbspNotifications</div></a>
-                    <a href="#"><div class="setting-options"><i class="fa fa-user-secret" aria-hidden="true"></i>&nbspPrivacy</div></a>
-                    <a href="#"><div class="setting-options"><i class="fa fa-shield" aria-hidden="true"></i>&nbspSecurity</div></a>
-                    <a href="#"><div class="setting-options"><i class="fa fa-adjust" aria-hidden="true"></i>&nbspTheme</div></a>
-                    <a href="#"><div class="setting-options"><i class="fa fa-picture-o" aria-hidden="true"></i>&nbspWallpaper</div></a>
-                    <a href="#"><div class="setting-options"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbspContact Us</div></a>
-                    <div style="text-align: center;margin-top: 8vh;"><h4>-By crmk-webtech</h4></div>
                 </div>
             </div>
         </div>
@@ -204,7 +342,8 @@
     </div>
     
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script src="js/scripts.js"></script>
+
 
 </html>

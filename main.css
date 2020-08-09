@@ -1,9 +1,10 @@
 *{
     margin:1px;
-    padding:0;
+      padding:0;
   }
  .outer{
      border:1px solid black;
+    
      height:95vh;
   
  }
@@ -16,10 +17,10 @@
    color:white;
  }
  .search{
-  position: fixed;
-  margin-top:13vh;
-  margin-left:3%;
- }
+     text-align: center;
+     position: fixed;
+     margin-top:13vh;
+     }
  .chat{
      height:13vh;
     
@@ -29,11 +30,11 @@
      font-size:2.5rem;
  }
  #searchbar{
+     width: 90%;
      background-color:rgb(231, 221, 221);
      padding:7px;
      border-radius:20px;
      font-size:1.5rem;
-     width: 26vw;
  }
  
  ::-webkit-scrollbar {
@@ -96,14 +97,70 @@ color:blue;
 .chat:hover{
 background-color:rgb(218, 234, 245);
 }
-
+#sidebar{
+    display:none;
+    width:34%;;
+    position:absolute;
+    height:95vh;
+    background-color:white;
+   border:1px solid black;
+    animation-duration: 1s;
+}
+@keyframes sidebar-in{
+    from{left:-466px;}
+    to{left:0px}
+}
+@keyframes sidebar-out{
+    from{left:0px;}
+    to{left:-455px;}
+}
+.style{
+    display:none;
+    
+}
+.top-sidebar{
+  background-color: rgb(48, 84, 150);
+  opacity:0.7 ;
+}
+#usericon,#username,#userno{
+    background-color: rgb(48, 84, 150);
+  color:white;
+  text-align:center;
+  z-index:1;
+}
+#usericon{
+    display:block;
+    margin:auto;
+    padding-top:4%;
+}
+#username,#userno{
+    font-size:2rem;
+}
+#userno{
+    padding-bottom: 4%;
+}
+.option{
+    margin:2%;
+    border-bottom: 1px groove;
+    font-size:1.75rem;
+}
+.icons{
+    margin:4%;
+}
+#sidebar a{
+    text-decoration:none;
+    color:black;
+}
 #settings{
     position: absolute;
-    left: 33.5vw;
+    width:34%;
     background-color: white;
     /* margin-top: 0; */
     padding: 0;
+    margin-left: -14px;
     box-sizing: border-box;
+    display:none;
+    animation-duration: 1s;
 }
 
 .setting-options{
@@ -122,6 +179,110 @@ background-color:rgb(218, 234, 245);
     padding: 12px;
 }
 
-a{
+#settings a{
     margin: 0;
+}
+#inner-search,#ellipsis{
+    margin:2%;
+    margin-top:-9px;
+    float:right;
+    font-size:2.5rem;
+    display:none;
+}
+#ellipsis{
+    margin:2.5%;
+    margin-top:-8px;
+}
+.chat-menu{
+    margin:5%;
+    padding:3%;
+   list-style-type: none;;
+}
+.chat-menu a{
+    text-decoration: none;
+    color:black;
+
+}
+a{
+    text-decoration: none';
+}
+.chat-div{
+    border:1px solid black;
+    position: absolute;
+    margin-left:75.5%;
+    background-color: white;
+    width:150px;
+    z-index:10;
+    display:none;
+}
+.chat-menu:hover{
+    background-color:rgb(218, 234, 245);
+    border-radius: 10px;
+   
+}
+.chat-menu a:hover{
+    text-decoration: none;
+    color:black;
+}
+#invitefriends{
+    position: absolute;
+    width:34%;
+    background-color: white;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 100;
+  
+    margin-left: -14px;
+    animation-duration: 1s;
+    display:none;
+}
+
+#invitefriends img{
+    width: 55%;
+    height: auto;
+    opacity: 0.5;
+    margin: 5% 0 0 22%;
+}
+
+#invite-content{
+    text-align: center;
+    font-size: 30px;
+    margin: 12vh 0 12vh 0;
+    color:rgb(48, 84, 150);
+    
+}
+
+#invite-link{
+    text-align: center;
+}
+#invite-link i{
+    padding: 11px;
+    background-color: rgb(48, 84, 150);
+    opacity: 0.7;
+    color: whitesmoke;
+    font-size: 20px;
+    margin: 0px;
+    vertical-align: middle;
+}
+#invite-link input{
+    padding: 9px;
+    width: 75%;
+    outline: none;
+    margin: 0px;
+}
+#contacts{
+    position: absolute;
+    width:34%;
+    background-color: white;
+    padding: 0;
+    box-sizing: border-box;
+    
+    display:none;;
+    margin-left: -14px;
+    animation-duration: 1s;
+}
+#contact-scroll{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height:82vh;
 }
