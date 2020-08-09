@@ -238,10 +238,10 @@ a{
 }
 
 #invitefriends img{
-    width: 55%;
+    width: 40%;
     height: auto;
     opacity: 0.5;
-    margin: 5% 0 0 22%;
+    margin-top: 5%;
 }
 
 #invite-content{
